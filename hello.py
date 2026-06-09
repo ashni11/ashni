@@ -1,4 +1,11 @@
-print("hello world")
+from fastapi import FastAPI
 
 
-print("vanakkam")
+
+app = FastAPI()
+
+
+@app.get("/")
+def main():
+
+    return "hello world"
